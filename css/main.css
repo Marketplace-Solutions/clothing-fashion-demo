@@ -1,0 +1,150 @@
+header {
+    padding: 2rem;
+    background-color: #fff;
+}
+h1, h2 {
+    font-family: 'Lora', serif;
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+h1 {
+    font-size: 3rem;
+    line-height: 3.3rem;
+}
+h2 {
+    font-size: 2rem;
+    line-height: 2.3rem;
+
+}
+body, p {
+    font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    color: #000;
+}
+.button {
+    height: 50px;
+    padding: 0 30px; 
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    border: none;
+}
+.button:hover {
+    border: none;
+}
+.button--primary {
+    background-color: #000;
+    color: #fff;
+}
+.button--primary:hover {
+    background-color: #ae97a2;
+    color: #fff;
+}
+.button--accent {
+    background-color: #ae97a2;
+    color: #fff;
+}
+.button--accent:hover {
+    background-color: #000;
+    color: #fff;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+header img {
+    max-width: 150px;
+}
+header > div {
+    width: 50%;
+}
+header > div.menu ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+header > div.menu ul li {
+    margin-right: 1rem;
+}
+header > div.menu ul li:last-of-type {
+    margin-right: 0;
+}
+header > div.menu ul li a:not(.button) {
+    color: #000;
+}
+header > div.menu ul li a:not(.button):hover {
+    color: #ae97a2;
+}
+header .button {
+    height: 40px;
+    padding: 0 1rem;
+}
+.hero {
+    background-image: url(../images/trendz-hero.webp);
+    min-height: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+.section {
+    padding: 5rem;
+}
+
+
+@media all and (max-width: 768px){
+    .section {
+        padding: 3rem;
+    }
+}
+
+.background--secondary {
+    background-color: #ececec;
+}
+.background--accent {
+    background-color: #ae97a2;
+}
+.background--accent .button:hover {
+    background-color: #fff;
+    color:#000;
+}
+
+.background--accent h2,
+.background--accent p {
+    color: #fff;
+}
+.section-pages .pages__media {
+    margin-bottom: 1rem;
+}
+.section-pages .pages__media a {
+    overflow: hidden;
+    display: block;
+   
+}
+
+.section-pages .pages__media a img {
+    transition: all 0.2s ease-in-out;
+    display: block;
+    width: 100%;
+    
+}
+.section-pages .pages__media a:hover img {
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.section-pages .pages__text a {
+    color: #000;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+
+@media all and (max-width: 600px){
+    header > div.menu {
+        display: none;
+    }
+}
